@@ -1,0 +1,23 @@
+           ========Projet Explorateur de Fichier========
+Page Index==>Authentification
+       login:
+       password:
+Page Accueil==> Interface utilisateur
+        affichage Profil users,dossier,fichier
+        avec possibiliter creer,copier,coller,consulter,renommer,supprimer 
+contenu dossier:
+  les fichiers
+  avec possibiliter de consulter,renommer,modifier,supprimer
+
+******** Etape a Suivre
+-Authentification = lamine
+-page accueil avec menu design =Oumou Mm.Deme
+-Generer et afficher les dossiers et fichier se trouvant dans le Server Wamp
+-insertion d'icon pour les dossiers pour faire la difference entre dossier et fichiers
+-creation de fichier
+-consulter,modifier,supprimer un fichier
+-creation de dossier
+-consulter,modifier,supprimer un dossier
+-inclure un fichier dans une dossier
+-supprimer le dossier contenant un fichier
+
