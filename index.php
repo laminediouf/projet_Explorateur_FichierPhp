@@ -1,45 +1,58 @@
-<?php
-if (isset($_POST['username']) && isset($_POST['password']))
-{
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-    if ($username=='lamine' && $password=='diouf'){
-        header("location:accueil.php");
-    }else{
-        echo 'Mot de passe Incorect';
-    }
-
-}
-?>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fichier php</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  
 </head>
 <body>
-<div class="container">
-    <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Authentification L.D.O.D<small> Kelomak(AccessDakar)</small></h3>
-                </div>
-                <div class="panel-body">
-                    <form role="form" action="index.php" method="post">
-                        <div class="form-group">
-                            <input type="text" name="username" id="username" class="form-control input-sm" placeholder="Login">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
-                        </div>
-                        <input type="submit" value="Connection" class="btn btn-info btn-block">
-                    </form>
-                </div>
+    <div class="container navigation">
+        <div class="row navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+            <div class="navbar-header">
             </div>
-        </div>
-    </div>
+             <div class="collapse navbar-collapse  navbar-center" id="navcol-1">
+             <ul class="nav navbar-nav ">
+                               <li role="presentation"><a href="index.php">Authentification</a></li>
+                             
+                           </ul>
+            </div>
+       </nav>
 </div>
+</div>
+<div id="section" class="section">
+        <div class="log"><h1>login</h1></div >       
+         <div class="container-form">
+              <form class="form"  action="explorateur.php" method="POST">
+                <div class="row">
+                   <div class="form-group">
+                     <div class="col-xs-12" >
+                        <label for="name"  class="control-label">log</label>
+                            <input type="text" placeholder="Nom d'utilsateur" name="username"  id="username" required="required" class="form-control" style="color:rgb(31, 27, 27)" >	 
+                            <span id="errorName"></span>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                         <div class="col-xs-12" >
+                            <label for="password"  class="control-label">password</label>
+                            <input type="password" placeholder="Enter password" name="PASSWORD"  id="password" required="required" class="form-control" style="color:rgb(31, 27, 27)">	 
+                            <span id="errorpassword"></span>
+                          </div>
+                    </div> 
+                 </div> 
+                 <br>
+                 <button class="btn btn-success">Envoyer</button>
+            </form>
+        </div>
+</div>    
+   
 </body>
 </html>
