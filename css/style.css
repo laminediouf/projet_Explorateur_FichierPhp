@@ -1,12 +1,57 @@
-body{
-    /*background: url("media/Gestock-background.png") no-repeat;*/
-    background-size: cover;
-    height:100%;
+.navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    border: 2;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
 }
-.centered-form{
-    margin-top: 150px;
+.navbar li a, .navbar .navbar-brand {
+    color: #d73351 !important;
 }
-.centered-form .panel{
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #ffffff;/* #ed9cab;*/
+}
+.container-fluid ul{
+    list-style: none;
+    text-decoration: none;
+}
+.container-fluid li button{
+    position: relative;
+    display: inline;
+    margin-left:2px;
+    float:left;
+    left: 270px;
+    font-size: 20px;
+}
+.container-fluid button{
+    width: 150px;
+    height: 50px;
+    background-color: #d73351;
+}
+.bg-grey{
+    position: absolute;
+    width:auto;
+    height:auto;
+    /*background-color: #1a4137;*/
+    top: 120px;
+}
+.section a{
+    position: relative;
+    left: 10px;
+    font-size:23px;
 }

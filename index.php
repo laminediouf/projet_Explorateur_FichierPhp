@@ -1,58 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>fichier php</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container navigation">
-        <div class="row navigation">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
-            <div class="navbar-header">
-            </div>
-             <div class="collapse navbar-collapse  navbar-center" id="navcol-1">
-             <ul class="nav navbar-nav ">
-                               <li role="presentation"><a href="index.php">Authentification</a></li>
-                             
-                           </ul>
-            </div>
-       </nav>
-</div>
-</div>
-<div id="section" class="section">
-        <div class="log"><h1>login</h1></div >       
-         <div class="container-form">
-              <form class="form"  action="explorateur.php" method="POST">
-                <div class="row">
-                   <div class="form-group">
-                     <div class="col-xs-12" >
-                        <label for="name"  class="control-label">log</label>
-                            <input type="text" placeholder="Nom d'utilsateur" name="username"  id="username" required="required" class="form-control" style="color:rgb(31, 27, 27)" >	 
-                            <span id="errorName"></span>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group">
-                         <div class="col-xs-12" >
-                            <label for="password"  class="control-label">password</label>
-                            <input type="password" placeholder="Enter password" name="PASSWORD"  id="password" required="required" class="form-control" style="color:rgb(31, 27, 27)">	 
-                            <span id="errorpassword"></span>
-                          </div>
-                    </div> 
-                 </div> 
-                 <br>
-                 <button class="btn btn-success">Envoyer</button>
-            </form>
+<?php include 'menu.php'; ?>
+<!-- CONTENEUR A pROPOS-->
+<div id="apropos" class="container-fluid">
+    <h2 style="color: #d73351;">Bienvenue Dans Votre Explorateur de Fichier Lamine D </h2><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span> <img src="img/IMG_2136.JPG" width="450" height="auto" class="img-fluid"></span>
         </div>
-</div>    
-   
+        <div class="col-sm-8">
+            <h2>Explorateur de Fichier</h2><br>
+            <h3 style="color: #d73351;">Description: <br> </h3>
+            <p  style="color: #d73351;font-family: 'Segoe UI';font-size: 20px;">
+                Un explorateur explorateur de fichiers est un Logiciel disposant d'une interface graphique<br>
+                permettant à l'utilisateur de gérer l'espace de stockage du système.Le système<br>
+                de fichiers est généralement présenté dans une vue hiérarchique où à chaque répertoire<br>
+                est associée la liste des fichiers qu'il contient et permetant aussi la manipulation des <br>
+                dossiers et fichiers: <b>Ajout ,Suppression ,Renommer ,Copier/Coller, Importer </b>
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
